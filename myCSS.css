@@ -1,0 +1,101 @@
+body {
+    color: #00c9c9;
+    background-color: #413c3c;
+    font-family: 'Prompt', sans-serif;
+}
+
+#downloadLink {
+    color: white;
+}
+
+.warning {
+    color: #ff7600;
+}
+
+.toggle {
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.toggle:hover {
+    cursor: pointer;
+}
+
+#info {
+    color: #00a882;
+}
+
+input[type=file] {
+    background-color: white;
+    color: black;
+}
+
+span {
+    color: blue;
+    font-weight: bold;
+}
+
+button {
+    border-radius: 0px;
+    border-width: 2px;
+    border-color: black;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 0;
+}
+
+h2 {
+    margin: 0px;
+}
+
+p {
+    display: block;
+    margin: 0;
+}
+
+div {
+    margin: 10px;
+}
+
+#container {
+    text-align: center;
+}
+
+.BOX {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.BAR {
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+    border-width: 10px;
+    box-shadow: 5px 5px 5px 0px black;
+    height: 40px;
+}
+
+label {
+    color: black;
+    font-weight: bold;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    background-color: grey;
+    width: 200px;
+    height: 15px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: black;
+    opacity: 0.9;
+    width: 10px;
+    height: 26px;
+}

@@ -1,0 +1,95 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Pixelate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="myCSS.css">
+    <script src="pixelate.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <h1>Pixelate by Luis Hernandez Cruz</h1>
+    <div>
+        <h2> Code for this project and others can be found on <a id="info" href="https://github.com/lhernandezcruz" target="_blank">my github</a>.</h2>
+        <h2> Instructions: </h2>
+        <p> Enable Javascript</p>
+        <p> Click "Choose File" and Choose an image to pixelate</p>
+        <p> Change "Pixel View" to change how pixelated it is</p>
+        <p> NOTE: Changing image view does not actually change the size of image when you download it... just how you view it</p>
+        <p> Click "Download as Image" to download</p>
+    </div>
+
+    <div id="container">
+        <div class="inputStuff">
+            <input type="file" id="file-input" accept="image/*">
+            <a id="downloadLink" download="">Download as Image</a>
+
+        </div>
+        <canvas id="canvas" style="zoom:100%;"></canvas>
+    </div>
+
+    <div id="inputStyle" class="BOX">
+        <h1 class="BAR toggle">
+            Toggle Bar
+        </h1>
+        <div class="BAR">
+            <div>
+                <form id="pixelPercentForm">
+                    <label for="pixelPercentInput">Pixel View:</label>
+                    <input type="text" id="pixelPercentInput" value="1" />
+                    <label> % </label>
+                    <button type="submit"> Update </button>
+                </form>
+            </div>
+        </div>
+        <div class="BAR">
+            <div>
+                <form id="imgPercentForm">
+                    <label for="imgPercentInput">Image View:</label>
+                    <input type="text" id="imgPercentInput" value="1" />
+                    <label> % </label>
+                    <button type="submit"> Update </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="barStyle" class="BOX">
+        <h1 class="BAR toggle">
+            Toggle Input
+        </h1>
+        <div class="BAR">
+            <div>
+                <label for="pixels">Pixel View:</label>
+                <span>0%</span>
+                <input type="range" id="pixelBar" min="0" max="100" value="1" />
+                <span>100%</span>
+            </div>
+        </div>
+        <div class="BAR">
+            <div>
+                <label for="imgPercent">Image View:</label>
+                <span>0%</span>
+                <input type="range" id="imageBar" min="0" max="100" value="1" />
+                <span>100%</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <a href="http://caniuse.com#search=download%20attribute" class="warning" target="_blank">
+            Download does not work on Safari or IE
+        </a>
+        <p>Works by scaling image down... and resizing it up.</p>
+    </div>
+
+
+</body>
+
+
+</html>
